@@ -1,39 +1,74 @@
 {
-  "name": "ppf-react-state-management",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
-    "typescript": "~3.7.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "ppf-react-state-management",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://filipkastovsky.github.io/ppf-react-state-management",
+    "dependencies": {
+        "@atlasgroup/react-atlantic": "^1.1.0",
+        "react": "^16.13.1",
+        "react-app-rewired": "^2.1.6",
+        "react-dom": "^16.13.1",
+        "react-scripts": "3.4.3",
+        "spectacle": "^6.2.0",
+        "typescript": "~3.7.2"
+    },
+    "scripts": {
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "test": "cross-env CI=true react-app-rewired test",
+        "lint": "eslint -c ./.eslintrc.json src/**/*.{js,jsx,ts,tsx} --max-warnings=0",
+        "test:watch": "react-app-rewired test",
+        "typecheck": "tsc --noEmit",
+        "depsTree": "dpdm src --ext \".ts,.tsx,.json\"",
+        "validateDepsTree": "node scripts/validateDependencyTree.js",
+        "deploy": "gh-pages -d build",
+        "predeploy": "yarn build"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
+        "@types/node": "^12.0.0",
+        "@types/react": "^16.9.0",
+        "@types/react-dom": "^16.9.0",
+        "@typescript-eslint/eslint-plugin": "^4.1.1",
+        "@typescript-eslint/parser": "^4.1.1",
+        "babel-plugin-react-atlantic": "^0.1.1",
+        "circular-dependency-plugin": "^5.2.0",
+        "cross-env": "^7.0.2",
+        "customize-cra": "^1.0.0",
+        "destiny": "^0.7.1",
+        "devmoji": "^2.1.9",
+        "dpdm": "^3.4.3",
+        "eslint": "6.6.0",
+        "eslint-config-react-app": "^5.2.1",
+        "husky": "^4.3.0",
+        "prettier": "^2.1.2",
+        "pretty-quick": "^3.0.2"
+    },
+    "peerDependencies": {
+        "@babel/core": "7.x"
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "pre-commit": "pretty-quick --staged",
+            "prepare-commit-msg": "devmoji -e --lint",
+            "post-commit": "yarn depsTree"
+        }
+    }
 }

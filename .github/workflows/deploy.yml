@@ -1,0 +1,31 @@
+name: 'deploy'
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    deploy:
+        name: 'Deploy'
+        runs-on: 'ubuntu-latest'
+
+        if: "!contains(github.event.head_commit.message,'#no-deploy')"
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  token: '${{ secrets.PAT }}'
+            - uses: fusion-engineering/setup-git-credentials@v2
+              with:
+                  credentials: ${{ secrets.GIT_CREDENTIALS }}
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: '12.x'
+                  registry-url: 'https://registry.npmjs.org'
+
+            - run: |
+                  git config --global user.name 'gh-pages-bot'
+                  git config --global user.email 'gh-pages-bot@atlasgroup.cz'
+            - run: yarn install
+            - run: yarn deploy
+              env:
+                  CI: true
