@@ -16,6 +16,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noImplicitAny": true,
+        "experimentalDecorators": true,
         "lib": ["dom", "dom.iterable", "esnext"]
     },
     "include": ["src"],
