@@ -19,7 +19,8 @@ export const Form: FormType = () => {
 
     const handleClick = useCallback(() => {
         value && dispatch(createNote(value));
-    }, [value]);
+    }, [value, dispatch]);
+
     return (
         <div>
             <Input value={value} onChange={handleChange} />

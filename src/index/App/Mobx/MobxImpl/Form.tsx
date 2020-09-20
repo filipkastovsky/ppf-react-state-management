@@ -18,7 +18,7 @@ export const Form: FormType = () => {
 
     const handleClick = useCallback(() => {
         value && noteStore.addNote(value);
-    }, [value]);
+    }, [value, noteStore]);
     return (
         <div>
             <Input value={value} onChange={handleChange} />
