@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.js": "/ppf-react-state-management/static/js/main.99ded96d.chunk.js",
+    "main.js.map": "/ppf-react-state-management/static/js/main.99ded96d.chunk.js.map",
+    "runtime-main.js": "/ppf-react-state-management/static/js/runtime-main.39ddd9e8.js",
+    "runtime-main.js.map": "/ppf-react-state-management/static/js/runtime-main.39ddd9e8.js.map",
+    "static/js/2.53eb0a97.chunk.js": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js",
+    "static/js/2.53eb0a97.chunk.js.map": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js.map",
+    "index.html": "/ppf-react-state-management/index.html",
+    "precache-manifest.89a5c1e38e8d9a9d57b2a7a595757bf2.js": "/ppf-react-state-management/precache-manifest.89a5c1e38e8d9a9d57b2a7a595757bf2.js",
+    "service-worker.js": "/ppf-react-state-management/service-worker.js",
+    "static/js/2.53eb0a97.chunk.js.LICENSE.txt": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js.LICENSE.txt",
+    "static/media/action.png": "/ppf-react-state-management/static/media/action.3ae0646f.png",
+    "static/media/class.png": "/ppf-react-state-management/static/media/class.78c04f1d.png",
+    "static/media/google-redux.jpg": "/ppf-react-state-management/static/media/google-redux.94c0499b.jpg",
+    "static/media/login-form.jpg": "/ppf-react-state-management/static/media/login-form.15a2a2ac.jpg",
+    "static/media/mcr2020.jpg": "/ppf-react-state-management/static/media/mcr2020.2e259026.jpg",
+    "static/media/middleware.jpg": "/ppf-react-state-management/static/media/middleware.6cf318ae.jpg",
+    "static/media/mutable-state.png": "/ppf-react-state-management/static/media/mutable-state.77bf36de.png",
+    "static/media/note-store.png": "/ppf-react-state-management/static/media/note-store.a9b65f28.png",
+    "static/media/react-icon.svg": "/ppf-react-state-management/static/media/react-icon.84287d09.svg",
+    "static/media/reducer.png": "/ppf-react-state-management/static/media/reducer.b41b78fb.png",
+    "static/media/redux-logo.png": "/ppf-react-state-management/static/media/redux-logo.62cc7d7a.png",
+    "static/media/redux-saga.png": "/ppf-react-state-management/static/media/redux-saga.f860bd1b.png",
+    "static/media/tatry1.jpg": "/ppf-react-state-management/static/media/tatry1.093b7d27.jpg",
+    "static/media/tatry2.jpg": "/ppf-react-state-management/static/media/tatry2.b2750a89.jpg",
+    "static/media/tenlines.jpg": "/ppf-react-state-management/static/media/tenlines.4c98c65a.jpg",
+    "static/media/todoctx.jpg": "/ppf-react-state-management/static/media/todoctx.7f577117.jpg",
+    "static/media/typescript_logo.svg": "/ppf-react-state-management/static/media/typescript_logo.c87187ca.svg",
+    "static/media/why.jpg": "/ppf-react-state-management/static/media/why.067d68a7.jpg",
+    "static/media/wtfthunk.jpg": "/ppf-react-state-management/static/media/wtfthunk.b52a6d5a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39ddd9e8.js",
+    "static/js/2.53eb0a97.chunk.js",
+    "static/js/main.99ded96d.chunk.js"
+  ]
+}
