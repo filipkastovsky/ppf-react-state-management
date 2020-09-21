@@ -11,72 +11,13 @@ import { Appear } from './shared/Appear';
 import { Container } from '../../shared/Container';
 
 export interface WhoAmIProps {}
-export type WhoAmIType = FC<WhoAmIProps>;
-
-export const WhoAmI: WhoAmIType = () => {
-    return (
-        <Container>
-            <Column>
-                <StyledTitle>whoami</StyledTitle>
-                <Center>
-                    <Column>
-                        <Appear elementNum={0}>
-                            <StyledText>
-                                <Center>
-                                    <StyledTsLogo /> + <StyledReactLogo />= ❤️
-                                </Center>
-                            </StyledText>
-                        </Appear>
-                        <Appear elementNum={1}>
-                            <StyledText>
-                                <Center>Nothing is impossible 💪</Center>
-                            </StyledText>
-                        </Appear>
-                        <Appear elementNum={4}>
-                            <StyledText>
-                                <Center>There is never enough coffee ☕</Center>
-                            </StyledText>
-                        </Appear>
-                        <Appear elementNum={5}>
-                            <StyledText>
-                                <Center>Dark mode everything 🌙</Center>
-                            </StyledText>
-                        </Appear>
-                        <Appear elementNum={7}>
-                            <StyledText>
-                                <Center>A guy who 🏃 a lot </Center>
-                            </StyledText>
-                        </Appear>
-                    </Column>
-                </Center>
-            </Column>
-
-            <Center justify direction="column">
-                <Appear elementNum={2}>
-                    <StyledImg0 />
-                </Appear>
-                <Appear elementNum={3}>
-                    <StyledImg1 />
-                </Appear>
-                <Appear elementNum={6}>
-                    <StyledImg2 />
-                </Appear>
-            </Center>
-        </Container>
-    );
-};
+export type WhoAmIType = ReturnType<FC<WhoAmIProps>>;
 
 const StyledTitle = styled(Text)`
     font-size: 64px;
     font-weight: 'bold';
     color: ${({ theme }) => theme.color.text.beta};
 `;
-
-// const StyledTitle2 = styled(Text)`
-//     font-size: 64px;
-//     font-weight: 'bold';
-//     color: ${({ theme }) => theme.color.text.gamma};
-// `;
 
 const StyledText = styled(Text)`
     font-size: 32px;
@@ -123,3 +64,54 @@ const StyledImg2 = styled.img.attrs({
     border-radius: 50%;
     margin: -100px 0 0 0;
 `;
+
+export const WhoAmI: WhoAmIType = (
+    <Container>
+        <Column>
+            <StyledTitle>whoami</StyledTitle>
+            <Center>
+                <Column>
+                    <Appear elementNum={0}>
+                        <StyledText>
+                            <Center>
+                                <StyledTsLogo /> + <StyledReactLogo />= ❤️
+                            </Center>
+                        </StyledText>
+                    </Appear>
+                    <Appear elementNum={1}>
+                        <StyledText>
+                            <Center>Nothing is impossible 💪</Center>
+                        </StyledText>
+                    </Appear>
+                    <Appear elementNum={4}>
+                        <StyledText>
+                            <Center>There is never enough coffee ☕</Center>
+                        </StyledText>
+                    </Appear>
+                    <Appear elementNum={5}>
+                        <StyledText>
+                            <Center>Dark mode everything 🌙</Center>
+                        </StyledText>
+                    </Appear>
+                    <Appear elementNum={7}>
+                        <StyledText>
+                            <Center>A guy who 🏃 a lot </Center>
+                        </StyledText>
+                    </Appear>
+                </Column>
+            </Center>
+        </Column>
+
+        <Center justify direction="column">
+            <Appear elementNum={2}>
+                <StyledImg0 />
+            </Appear>
+            <Appear elementNum={3}>
+                <StyledImg1 />
+            </Appear>
+            <Appear elementNum={6}>
+                <StyledImg2 />
+            </Appear>
+        </Center>
+    </Container>
+);

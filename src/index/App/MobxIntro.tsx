@@ -9,28 +9,7 @@ import mobxLogo from './MobxIntro/mobx-logo.png';
 import { Column } from './shared/Column';
 
 export interface MobxIntroProps {}
-export type MobxIntroType = FC<MobxIntroProps>;
-
-export const MobxIntro: MobxIntroType = () => {
-    return (
-        <Container>
-            <Center>
-                <StyledTitle>
-                    <Center>
-                        Mobx <StyledMobxLogo />
-                    </Center>
-                </StyledTitle>
-            </Center>
-            <Center>
-                <Column>
-                    <Appear elementNum={0}>
-                        <StyledImg />
-                    </Appear>
-                </Column>
-            </Center>
-        </Container>
-    );
-};
+export type MobxIntroType = ReturnType<FC<MobxIntroProps>>;
 
 const StyledTitle = styled(Text)`
     font-size: 64px;
@@ -51,3 +30,22 @@ const StyledMobxLogo = styled.img.attrs({
     width: 100px;
     margin: 0 0 0 40px;
 `;
+
+export const MobxIntro: MobxIntroType = (
+    <Container>
+        <Center>
+            <StyledTitle>
+                <Center>
+                    Mobx <StyledMobxLogo />
+                </Center>
+            </StyledTitle>
+        </Center>
+        <Center>
+            <Column>
+                <Appear elementNum={0}>
+                    <StyledImg />
+                </Appear>
+            </Column>
+        </Center>
+    </Container>
+);

@@ -7,47 +7,7 @@ import { Appear } from './shared/Appear';
 import { Container } from '../../shared/Container';
 
 export interface AboutProps {}
-export type AboutType = FC<AboutProps>;
-
-export const About: AboutType = () => {
-    return (
-        <Container>
-            <Column>
-                <StyledTitle>o čem ten talk bude</StyledTitle>
-                <Center>
-                    <Column>
-                        <Appear elementNum={0}>
-                            <StyledText>
-                                <Center>
-                                    cesta vývojáře 🌴
-                                    <StyledTextGreen>
-                                        ekosystémem
-                                    </StyledTextGreen>
-                                    Reactu
-                                </Center>
-                            </StyledText>
-                        </Appear>
-                        <Appear elementNum={1}>
-                            <StyledText>
-                                <Center>
-                                    state at
-                                    <StyledTextGreen>scale</StyledTextGreen>
-                                    🚀
-                                </Center>
-                            </StyledText>
-                        </Appear>
-                        <Appear elementNum={2}>
-                            <StyledText>
-                                nejčastější
-                                <StyledTextGreen>fuckupy</StyledTextGreen>☢️
-                            </StyledText>
-                        </Appear>
-                    </Column>
-                </Center>
-            </Column>
-        </Container>
-    );
-};
+export type AboutType = ReturnType<FC<AboutProps>>;
 
 const StyledTitle = styled(Text)`
     font-size: 64px;
@@ -67,3 +27,38 @@ const StyledTextGreen = styled(Text)`
     margin: 0 15px;
     color: ${({ theme }) => theme.color.text.beta};
 `;
+export const About: AboutType = (
+    <Container>
+        <Column>
+            <StyledTitle>o čem ten talk bude</StyledTitle>
+            <Center>
+                <Column>
+                    <Appear elementNum={0}>
+                        <StyledText>
+                            <Center>
+                                cesta vývojáře 🌴
+                                <StyledTextGreen>ekosystémem</StyledTextGreen>
+                                Reactu
+                            </Center>
+                        </StyledText>
+                    </Appear>
+                    <Appear elementNum={1}>
+                        <StyledText>
+                            <Center>
+                                state at
+                                <StyledTextGreen>scale</StyledTextGreen>
+                                🚀
+                            </Center>
+                        </StyledText>
+                    </Appear>
+                    <Appear elementNum={2}>
+                        <StyledText>
+                            nejčastější
+                            <StyledTextGreen>fuckupy</StyledTextGreen>☢️
+                        </StyledText>
+                    </Appear>
+                </Column>
+            </Center>
+        </Column>
+    </Container>
+);

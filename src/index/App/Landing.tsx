@@ -8,37 +8,8 @@ import { Column } from './shared/Column';
 import { Row } from './Landing/Row';
 
 export interface LandingProps {}
-export type LandingType = FC<LandingProps>;
+export type LandingType = ReturnType<FC<LandingProps>>;
 
-export const Landing: LandingType = () => {
-    return (
-        <Column>
-            <Center>
-                <Column>
-                    <Center>
-                        <StyledTitle>
-                            The past, present and future of
-                        </StyledTitle>
-                    </Center>
-                    <Row>
-                        <Center>
-                            <StyledReactLogo />
-                            <StyledTitle2>
-                                React
-                                <StyledTitle> state management</StyledTitle>
-                            </StyledTitle2>
-                        </Center>
-                    </Row>
-                </Column>
-            </Center>
-            <StyledName>
-                <Center>
-                    Filip Kaštovký, Frontend Dev @<StyledAgrpLogo />
-                </Center>
-            </StyledName>
-        </Column>
-    );
-};
 const StyledReactLogo = styled.img.attrs({
     src: react,
 })`
@@ -69,3 +40,28 @@ const StyledName = styled(Text)`
     font-size: 32px;
     color: ${({ theme }) => theme.color.text.alpha};
 `;
+export const Landing: LandingType = (
+    <Column>
+        <Center>
+            <Column>
+                <Center>
+                    <StyledTitle>The past, present and future of</StyledTitle>
+                </Center>
+                <Row>
+                    <Center>
+                        <StyledReactLogo />
+                        <StyledTitle2>
+                            React
+                            <StyledTitle> state management</StyledTitle>
+                        </StyledTitle2>
+                    </Center>
+                </Row>
+            </Column>
+        </Center>
+        <StyledName>
+            <Center>
+                Filip Kaštovký, Frontend Dev @<StyledAgrpLogo />
+            </Center>
+        </StyledName>
+    </Column>
+);

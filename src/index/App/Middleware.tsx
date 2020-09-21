@@ -9,23 +9,7 @@ import thunk from './Middleware/wtfthunk.jpg';
 import { Appear } from './shared/Appear';
 
 export interface MiddlewareProps {}
-export type MiddlewareType = FC<MiddlewareProps>;
-
-export const Middleware: MiddlewareType = () => {
-    return (
-        <Center justify align>
-            <Appear elementNum={1}>
-                <StyledSaga />
-                <StyledUseSaga />
-            </Appear>
-            <StyledMiddleware />
-            <Appear elementNum={0}>
-                <StyledThunk />
-                <StyledWhy />
-            </Appear>
-        </Center>
-    );
-};
+export type MiddlewareType = ReturnType<FC<MiddlewareProps>>;
 
 const StyledMiddleware = styled.img.attrs({
     src: middleware,
@@ -69,3 +53,17 @@ const StyledWhy = styled.img.attrs({
     width: 300px;
     border-radius: ${({ theme }) => theme.radius};
 `;
+
+export const Middleware: MiddlewareType = (
+    <Center justify align>
+        <Appear elementNum={1}>
+            <StyledSaga />
+            <StyledUseSaga />
+        </Appear>
+        <StyledMiddleware />
+        <Appear elementNum={0}>
+            <StyledThunk />
+            <StyledWhy />
+        </Appear>
+    </Center>
+);

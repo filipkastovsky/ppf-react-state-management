@@ -10,31 +10,7 @@ import reduxLogo from './ReduxIntro/redux-logo.png';
 import { Column } from './shared/Column';
 
 export interface ReduxIntroProps {}
-export type ReduxIntroType = FC<ReduxIntroProps>;
-
-export const ReduxIntro: ReduxIntroType = () => {
-    return (
-        <Container>
-            <Center>
-                <StyledTitle>
-                    <Center>
-                        Redux <StyledReduxLogo />
-                    </Center>
-                </StyledTitle>
-            </Center>
-            <Center>
-                <Column>
-                    <Appear elementNum={0}>
-                        <StyledReducerImg />
-                    </Appear>
-                    <Appear elementNum={1}>
-                        <StyledActionImg />
-                    </Appear>
-                </Column>
-            </Center>
-        </Container>
-    );
-};
+export type ReduxIntroType = ReturnType<FC<ReduxIntroProps>>;
 
 const StyledTitle = styled(Text)`
     font-size: 64px;
@@ -62,3 +38,25 @@ const StyledReduxLogo = styled.img.attrs({
     width: 100px;
     margin: 0 0 0 40px;
 `;
+
+export const ReduxIntro: ReduxIntroType = (
+    <Container>
+        <Center>
+            <StyledTitle>
+                <Center>
+                    Redux <StyledReduxLogo />
+                </Center>
+            </StyledTitle>
+        </Center>
+        <Center>
+            <Column>
+                <Appear elementNum={0}>
+                    <StyledReducerImg />
+                </Appear>
+                <Appear elementNum={1}>
+                    <StyledActionImg />
+                </Appear>
+            </Column>
+        </Center>
+    </Container>
+);

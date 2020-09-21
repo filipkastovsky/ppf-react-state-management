@@ -7,24 +7,7 @@ import { Container } from '../../shared/Container';
 import classImpl from './Flashback/class.png';
 
 export interface FlashbackProps {}
-export type FlashbackType = FC<FlashbackProps>;
-
-export const Flashback: FlashbackType = () => {
-    return (
-        <StyledContainer>
-            <Center>
-                <StyledTitle>Zpátky do minulosti...</StyledTitle>
-            </Center>
-            <Center>
-                <Column>
-                    <Appear elementNum={0}>
-                        <StyledImg />
-                    </Appear>
-                </Column>
-            </Center>
-        </StyledContainer>
-    );
-};
+export type FlashbackType = ReturnType<FC<FlashbackProps>>;
 
 const StyledContainer = styled(Container)``;
 
@@ -39,3 +22,18 @@ const StyledImg = styled.img.attrs({
 })`
     height: 700px;
 `;
+
+export const Flashback: FlashbackType = (
+    <StyledContainer>
+        <Center>
+            <StyledTitle>Zpátky do minulosti...</StyledTitle>
+        </Center>
+        <Center>
+            <Column>
+                <Appear elementNum={0}>
+                    <StyledImg />
+                </Appear>
+            </Column>
+        </Center>
+    </StyledContainer>
+);

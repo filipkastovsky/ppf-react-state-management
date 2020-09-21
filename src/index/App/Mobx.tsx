@@ -6,20 +6,7 @@ import { Container } from '../../shared/Container';
 import { MobxImpl } from './Mobx/MobxImpl';
 
 export interface MobxProps {}
-export type MobxType = FC<MobxProps>;
-
-export const Mobx: MobxType = () => {
-    return (
-        <StyledContainer>
-            <Column>
-                <StyledTitle>Mobx + Context ❤️🎇</StyledTitle>
-                <Center justify={false} align={false}>
-                    <MobxImpl />
-                </Center>
-            </Column>
-        </StyledContainer>
-    );
-};
+export type MobxType = ReturnType<FC<MobxProps>>;
 
 const StyledContainer = styled(Container)``;
 
@@ -28,3 +15,14 @@ const StyledTitle = styled(Text)`
     font-weight: 'bold';
     color: ${({ theme }) => theme.color.text.beta};
 `;
+
+export const Mobx: MobxType = (
+    <StyledContainer>
+        <Column>
+            <StyledTitle>Mobx + Context ❤️🎇</StyledTitle>
+            <Center justify={false} align={false}>
+                <MobxImpl />
+            </Center>
+        </Column>
+    </StyledContainer>
+);

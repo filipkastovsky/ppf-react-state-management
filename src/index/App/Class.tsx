@@ -6,20 +6,7 @@ import { Container } from '../../shared/Container';
 import { ClassImpl } from './Class/ClassImpl';
 
 export interface ClassProps {}
-export type ClassType = FC<ClassProps>;
-
-export const Class: ClassType = () => {
-    return (
-        <StyledContainer>
-            <Column>
-                <StyledTitle>Vanilla class 🍦</StyledTitle>
-                <Center justify={false} align={false}>
-                    <ClassImpl />
-                </Center>
-            </Column>
-        </StyledContainer>
-    );
-};
+export type ClassType = ReturnType<FC<ClassProps>>;
 
 const StyledContainer = styled(Container)``;
 
@@ -28,3 +15,14 @@ const StyledTitle = styled(Text)`
     font-weight: 'bold';
     color: ${({ theme }) => theme.color.text.beta};
 `;
+
+export const Class: ClassType = (
+    <StyledContainer>
+        <Column>
+            <StyledTitle>Vanilla class 🍦</StyledTitle>
+            <Center justify={false} align={false}>
+                <ClassImpl />
+            </Center>
+        </Column>
+    </StyledContainer>
+);

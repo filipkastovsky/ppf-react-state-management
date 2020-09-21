@@ -4,15 +4,7 @@ import { Center } from './shared/Center';
 import state from './MutableState/mutable-state.png';
 
 export interface MutableStateProps {}
-export type MutableStateType = FC<MutableStateProps>;
-
-export const MutableState: MutableStateType = () => {
-    return (
-        <Center justify align>
-            <StyledMutableState />
-        </Center>
-    );
-};
+export type MutableStateType = ReturnType<FC<MutableStateProps>>;
 
 const StyledMutableState = styled.img.attrs({
     src: state,
@@ -20,3 +12,9 @@ const StyledMutableState = styled.img.attrs({
     width: 600px;
     border-radius: ${({ theme }) => theme.radius};
 `;
+
+export const MutableState: MutableStateType = (
+    <Center justify align>
+        <StyledMutableState />
+    </Center>
+);

@@ -66,31 +66,21 @@ export const App: AppType = () => {
     return (
         <AtlanticProvider theme={theme}>
             <Deck backgroundColor={backgroundColor} animationsWhenGoingBack>
-                <Slide backgroundColor={backgroundColor}>{Landing({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>{WhoAmI({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>{About({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>{Flashback({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>
-                    <Class />
-                </Slide>
-                <Slide backgroundColor={backgroundColor}>
-                    {LetsGoogle({})}
-                </Slide>
-                <Slide backgroundColor={backgroundColor}>
-                    {ReduxIntro({})}
-                </Slide>
-                <Slide backgroundColor={backgroundColor}>{Redux({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>
-                    {Middleware({})}
-                </Slide>
-                <Slide backgroundColor={backgroundColor}>{LoginForm({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>{Mobx({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>{MobxIntro({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>
-                    {MutableState({})}
-                </Slide>
-                <Slide backgroundColor={backgroundColor}>{Hooks({})}</Slide>
-                <Slide backgroundColor={backgroundColor}>{Shit({})}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Landing}</Slide>
+                <Slide backgroundColor={backgroundColor}>{WhoAmI}</Slide>
+                <Slide backgroundColor={backgroundColor}>{About}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Flashback}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Class}</Slide>
+                <Slide backgroundColor={backgroundColor}>{LetsGoogle}</Slide>
+                <Slide backgroundColor={backgroundColor}>{ReduxIntro}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Redux}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Middleware}</Slide>
+                <Slide backgroundColor={backgroundColor}>{LoginForm}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Mobx}</Slide>
+                <Slide backgroundColor={backgroundColor}>{MobxIntro}</Slide>
+                <Slide backgroundColor={backgroundColor}>{MutableState}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Hooks}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Shit}</Slide>
             </Deck>
         </AtlanticProvider>
     );
