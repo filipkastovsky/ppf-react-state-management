@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91a59461535dfcdc54c9c69d76ebb580",
+    "revision": "d22e19933300d44e71d6ea0971973a76",
     "url": "/ppf-react-state-management/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "514ec037f66c683443ba",
-    "url": "/ppf-react-state-management/static/js/main.99ded96d.chunk.js"
+    "revision": "6ea84acdff61ba83935d",
+    "url": "/ppf-react-state-management/static/js/main.7215ac67.chunk.js"
   },
   {
     "revision": "e49bb6061fa5d49305c8",
