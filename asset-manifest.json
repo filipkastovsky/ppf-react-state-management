@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/ppf-react-state-management/static/js/main.7215ac67.chunk.js",
-    "main.js.map": "/ppf-react-state-management/static/js/main.7215ac67.chunk.js.map",
+    "main.js": "/ppf-react-state-management/static/js/main.b98da69f.chunk.js",
+    "main.js.map": "/ppf-react-state-management/static/js/main.b98da69f.chunk.js.map",
     "runtime-main.js": "/ppf-react-state-management/static/js/runtime-main.39ddd9e8.js",
     "runtime-main.js.map": "/ppf-react-state-management/static/js/runtime-main.39ddd9e8.js.map",
-    "static/js/2.53eb0a97.chunk.js": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js",
-    "static/js/2.53eb0a97.chunk.js.map": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js.map",
+    "static/js/2.f1a985f4.chunk.js": "/ppf-react-state-management/static/js/2.f1a985f4.chunk.js",
+    "static/js/2.f1a985f4.chunk.js.map": "/ppf-react-state-management/static/js/2.f1a985f4.chunk.js.map",
     "index.html": "/ppf-react-state-management/index.html",
-    "precache-manifest.25770f8bef4e7aeac1b3c6c3f0748ce5.js": "/ppf-react-state-management/precache-manifest.25770f8bef4e7aeac1b3c6c3f0748ce5.js",
+    "precache-manifest.fc42864ac0bf9bea5681ee85702584a9.js": "/ppf-react-state-management/precache-manifest.fc42864ac0bf9bea5681ee85702584a9.js",
     "service-worker.js": "/ppf-react-state-management/service-worker.js",
-    "static/js/2.53eb0a97.chunk.js.LICENSE.txt": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js.LICENSE.txt",
+    "static/js/2.f1a985f4.chunk.js.LICENSE.txt": "/ppf-react-state-management/static/js/2.f1a985f4.chunk.js.LICENSE.txt",
     "static/media/action.png": "/ppf-react-state-management/static/media/action.3ae0646f.png",
     "static/media/class.png": "/ppf-react-state-management/static/media/class.78c04f1d.png",
     "static/media/google-redux.jpg": "/ppf-react-state-management/static/media/google-redux.94c0499b.jpg",
@@ -32,7 +32,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.39ddd9e8.js",
-    "static/js/2.53eb0a97.chunk.js",
-    "static/js/main.7215ac67.chunk.js"
+    "static/js/2.f1a985f4.chunk.js",
+    "static/js/main.b98da69f.chunk.js"
   ]
 }

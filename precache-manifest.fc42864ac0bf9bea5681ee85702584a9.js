@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d22e19933300d44e71d6ea0971973a76",
+    "revision": "73b8221153b51f1c3ceb63241be14d62",
     "url": "/ppf-react-state-management/index.html"
   },
   {
-    "revision": "af35870bba5a19648534",
-    "url": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js"
+    "revision": "2992f523de97afa353e7",
+    "url": "/ppf-react-state-management/static/js/2.f1a985f4.chunk.js"
   },
   {
     "revision": "cc020e0ac6f0994ef72bbc8843a11f45",
-    "url": "/ppf-react-state-management/static/js/2.53eb0a97.chunk.js.LICENSE.txt"
+    "url": "/ppf-react-state-management/static/js/2.f1a985f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ea84acdff61ba83935d",
-    "url": "/ppf-react-state-management/static/js/main.7215ac67.chunk.js"
+    "revision": "bed52007af6304ebb3f9",
+    "url": "/ppf-react-state-management/static/js/main.b98da69f.chunk.js"
   },
   {
     "revision": "e49bb6061fa5d49305c8",
