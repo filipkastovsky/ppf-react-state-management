@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73b8221153b51f1c3ceb63241be14d62",
+    "revision": "ea68a9a3332a0fd8067f0e4f65100e5e",
     "url": "/ppf-react-state-management/index.html"
   },
   {
-    "revision": "2992f523de97afa353e7",
-    "url": "/ppf-react-state-management/static/js/2.f1a985f4.chunk.js"
+    "revision": "d7e8aea72f5d3a8b4971",
+    "url": "/ppf-react-state-management/static/js/2.682f9098.chunk.js"
   },
   {
     "revision": "cc020e0ac6f0994ef72bbc8843a11f45",
-    "url": "/ppf-react-state-management/static/js/2.f1a985f4.chunk.js.LICENSE.txt"
+    "url": "/ppf-react-state-management/static/js/2.682f9098.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bed52007af6304ebb3f9",
-    "url": "/ppf-react-state-management/static/js/main.b98da69f.chunk.js"
+    "revision": "9b35984657105cf8b9b6",
+    "url": "/ppf-react-state-management/static/js/main.60d257a1.chunk.js"
   },
   {
     "revision": "e49bb6061fa5d49305c8",
@@ -40,6 +40,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ppf-react-state-management/static/media/mcr2020.2e259026.jpg"
   },
   {
+    "revision": "5316c8f366a06dbeeef7e81e34acaf89",
+    "url": "/ppf-react-state-management/static/media/memo.5316c8f3.png"
+  },
+  {
     "revision": "6cf318aec1ab3425003139a8bed3a34d",
     "url": "/ppf-react-state-management/static/media/middleware.6cf318ae.jpg"
   },
@@ -50,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a9b65f285bc5c6dd233788e55d730c1a",
     "url": "/ppf-react-state-management/static/media/note-store.a9b65f28.png"
+  },
+  {
+    "revision": "6c29853cb529f7a554ba393a7014a33c",
+    "url": "/ppf-react-state-management/static/media/provider-hell.6c29853c.png"
   },
   {
     "revision": "84287d09b8053c6fa598893b8910786a",
