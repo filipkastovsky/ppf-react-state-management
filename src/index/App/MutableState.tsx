@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { styled } from '@atlasgroup/react-atlantic';
-import { Center } from './shared/Center';
+import { Center } from '../../shared/Center';
 import state from './MutableState/mutable-state.png';
 
 export interface MutableStateProps {}

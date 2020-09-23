@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from '@atlasgroup/react-atlantic';
 import { ComponentPropsWithRef, forwardRef } from 'react';
-import { Container } from '../../../shared/Container';
+import { Container } from './Container';
 
 type CenterProps = {
     justify: boolean;

@@ -21,6 +21,9 @@ import { MutableState } from './App/MutableState';
 import { LoginForm } from './App/LoginForm';
 import { Hooks } from './App/Hooks';
 import { Shit } from './App/Shit';
+import { SoHowDoYouManageState } from './App/SoHowDoYouManageState';
+import { Memo } from './App/Memo';
+import { CtxSplitting } from './App/CtxSplitting';
 
 export interface AppProps {}
 export type AppType = FC<AppProps>;
@@ -81,6 +84,11 @@ export const App: AppType = () => {
                 <Slide backgroundColor={backgroundColor}>{MutableState}</Slide>
                 <Slide backgroundColor={backgroundColor}>{Hooks}</Slide>
                 <Slide backgroundColor={backgroundColor}>{Shit}</Slide>
+                <Slide backgroundColor={backgroundColor}>
+                    {SoHowDoYouManageState}
+                </Slide>
+                <Slide backgroundColor={backgroundColor}>{Memo}</Slide>
+                <Slide backgroundColor={backgroundColor}>{CtxSplitting}</Slide>
             </Deck>
         </AtlanticProvider>
     );

@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import { styled, Text } from '@atlasgroup/react-atlantic';
-import { Center } from './shared/Center';
+import { Center } from '../../shared/Center';
 import { Column } from './shared/Column';
 import tenLinesOfBullshit from './Hooks/tenlines.jpg';
 import todoctx from './Hooks/todoctx.jpg';
-import { Appear } from './shared/Appear';
+import { Appear } from '../../shared/Appear';
 
 export interface HooksProps {}
 export type HooksType = ReturnType<FC<HooksProps>>;

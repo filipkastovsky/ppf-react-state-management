@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { styled, Text } from '@atlasgroup/react-atlantic';
-import { Center } from './shared/Center';
+import { Center } from '../../shared/Center';
 
-import { Appear } from './shared/Appear';
+import { Appear } from '../../shared/Appear';
 import { Container } from '../../shared/Container';
 import noteStore from './MobxIntro/note-store.png';
 import mobxLogo from './MobxIntro/mobx-logo.png';

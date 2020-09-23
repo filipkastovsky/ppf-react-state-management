@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 
 import react from './shared/react-icon.svg';
 import agrp from './Landing/atlas_group_logo.png';
-import { Center } from './shared/Center';
+import { Center } from '../../shared/Center';
 import { Column } from './shared/Column';
 import { Row } from './Landing/Row';
 

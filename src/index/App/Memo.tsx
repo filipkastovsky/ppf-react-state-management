@@ -4,13 +4,12 @@ import { Center } from '../../shared/Center';
 
 import { Appear } from '../../shared/Appear';
 import { Container } from '../../shared/Container';
-import reducer from './ReduxIntro/reducer.png';
-import action from './ReduxIntro/action.png';
-import reduxLogo from './ReduxIntro/redux-logo.png';
+import memo from './Memo/memo.png';
+import usememo from './Memo/useMemo.png';
 import { Column } from './shared/Column';
 
-export interface ReduxIntroProps {}
-export type ReduxIntroType = ReturnType<FC<ReduxIntroProps>>;
+export interface MemoProps {}
+export type MemoType = ReturnType<FC<MemoProps>>;
 
 const StyledTitle = styled(Text)`
     font-size: 64px;
@@ -18,43 +17,31 @@ const StyledTitle = styled(Text)`
     color: ${({ theme }) => theme.color.text.beta};
 `;
 
-const StyledReducerImg = styled.img.attrs({
-    src: reducer,
+const StyledMemo = styled.img.attrs({
+    src: memo,
+})`
+    width: 400px;
+    border-radius: ${({ theme }) => theme.radius};
+`;
+const StyledUseMemo = styled.img.attrs({
+    src: usememo,
 })`
     width: 400px;
     border-radius: ${({ theme }) => theme.radius};
 `;
 
-const StyledActionImg = styled.img.attrs({
-    src: action,
-})`
-    width: 400px;
-    border-radius: ${({ theme }) => theme.radius};
-`;
-
-const StyledReduxLogo = styled.img.attrs({
-    src: reduxLogo,
-})`
-    width: 100px;
-    margin: 0 0 0 40px;
-`;
-
-export const ReduxIntro: ReduxIntroType = (
+export const Memo: MemoType = (
     <Container>
         <Center>
-            <StyledTitle>
-                <Center>
-                    Redux <StyledReduxLogo />
-                </Center>
-            </StyledTitle>
+            <StyledTitle>memoization</StyledTitle>
         </Center>
         <Center>
             <Column>
                 <Appear elementNum={0}>
-                    <StyledReducerImg />
+                    <StyledUseMemo />
                 </Appear>
                 <Appear elementNum={1}>
-                    <StyledActionImg />
+                    <StyledMemo />
                 </Appear>
             </Column>
         </Center>

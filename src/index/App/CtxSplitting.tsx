@@ -4,10 +4,10 @@ import { Center } from '../../shared/Center';
 
 import { Appear } from '../../shared/Appear';
 import { Container } from '../../shared/Container';
-import google from './LetsGoogle/google-redux.jpg';
+import providerHell from '../../shared/provider-hell.png';
 
-export interface LetsGoogleProps {}
-export type LetsGoogleType = ReturnType<FC<LetsGoogleProps>>;
+export interface CtxSplittingProps {}
+export type CtxSplittingType = ReturnType<FC<CtxSplittingProps>>;
 
 const StyledTitle = styled(Text)`
     font-size: 64px;
@@ -15,21 +15,21 @@ const StyledTitle = styled(Text)`
     color: ${({ theme }) => theme.color.text.beta};
 `;
 
-const StyledImg = styled.img.attrs({
-    src: google,
+const StyledCtxSplitting = styled.img.attrs({
+    src: providerHell,
 })`
-    width: 600px;
+    width: 400px;
     border-radius: ${({ theme }) => theme.radius};
 `;
 
-export const LetsGoogle: LetsGoogleType = (
+export const CtxSplitting: CtxSplittingType = (
     <Container>
         <Center>
-            <StyledTitle>Lets google!</StyledTitle>
+            <StyledTitle>ctx splitting</StyledTitle>
         </Center>
         <Center>
             <Appear elementNum={0}>
-                <StyledImg />
+                <StyledCtxSplitting />
             </Appear>
         </Center>
     </Container>

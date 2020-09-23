@@ -5,9 +5,9 @@ import tatry1 from './WhoAmI/tatry1.jpg';
 import tatry2 from './WhoAmI/tatry2.jpg';
 import mcr2020 from './WhoAmI/mcr2020.jpg';
 import react from './shared/react-icon.svg';
-import { Center } from './shared/Center';
+import { Center } from '../../shared/Center';
 import { Column } from './shared/Column';
-import { Appear } from './shared/Appear';
+import { Appear } from '../../shared/Appear';
 import { Container } from '../../shared/Container';
 
 export interface WhoAmIProps {}

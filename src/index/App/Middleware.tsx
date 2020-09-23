@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import { styled } from '@atlasgroup/react-atlantic';
-import { Center } from './shared/Center';
+import { Center } from '../../shared/Center';
 import middleware from './Middleware/middleware.jpg';
 import saga from './Middleware/redux-saga.png';
 import useSaga from './Middleware/just-use-saga.jpg';
 import why from './Middleware/why.jpg';
 import thunk from './Middleware/wtfthunk.jpg';
-import { Appear } from './shared/Appear';
+import { Appear } from '../../shared/Appear';
 
 export interface MiddlewareProps {}
 export type MiddlewareType = ReturnType<FC<MiddlewareProps>>;

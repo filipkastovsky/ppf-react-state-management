@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { styled, Text } from '@atlasgroup/react-atlantic';
-import { Center } from './shared/Center';
+import { Center } from '../../shared/Center';
 import { Column } from './shared/Column';
 import { Container } from '../../shared/Container';
 import { ReduxImpl } from './Redux/ReduxImpl';

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { styled } from '@atlasgroup/react-atlantic';
-import { Center } from './shared/Center';
+import { Center } from '../../shared/Center';
 import loginForm from './LoginForm/login-form.jpg';
 
 export interface LoginFormProps {}
