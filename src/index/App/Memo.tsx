@@ -20,13 +20,13 @@ const StyledTitle = styled(Text)`
 const StyledMemo = styled.img.attrs({
     src: memo,
 })`
-    width: 400px;
+    width: 600px;
     border-radius: ${({ theme }) => theme.radius};
 `;
 const StyledUseMemo = styled.img.attrs({
     src: usememo,
 })`
-    width: 400px;
+    width: 600px;
     border-radius: ${({ theme }) => theme.radius};
 `;
 

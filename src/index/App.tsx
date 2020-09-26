@@ -24,6 +24,16 @@ import { Shit } from './App/Shit';
 import { SoHowDoYouManageState } from './App/SoHowDoYouManageState';
 import { Memo } from './App/Memo';
 import { CtxSplitting } from './App/CtxSplitting';
+import { HooksIntro } from './App/HooksIntro';
+import { ReactContext } from './App/ReactContext';
+// import { StateOutsideReact } from './App/StateOutsideReact';
+import { SomeRealSolutions } from './App/SomeRealSolution';
+import { Context } from './App/Context';
+import { Zustand } from './App/Zustand';
+import { ApolloState } from './App/ApolloState';
+import { Thanks } from './App/Thanks';
+import { WhatAboutRecoil } from './App/WhatAboutRecoil';
+import { StateSeperation } from './App/StateSeperation';
 
 export interface AppProps {}
 export type AppType = FC<AppProps>;
@@ -82,13 +92,31 @@ export const App: AppType = () => {
                 <Slide backgroundColor={backgroundColor}>{Mobx}</Slide>
                 <Slide backgroundColor={backgroundColor}>{MobxIntro}</Slide>
                 <Slide backgroundColor={backgroundColor}>{MutableState}</Slide>
+                <Slide backgroundColor={backgroundColor}>{HooksIntro}</Slide>
+                <Slide backgroundColor={backgroundColor}>{ReactContext}</Slide>
                 <Slide backgroundColor={backgroundColor}>{Hooks}</Slide>
                 <Slide backgroundColor={backgroundColor}>{Shit}</Slide>
                 <Slide backgroundColor={backgroundColor}>
                     {SoHowDoYouManageState}
                 </Slide>
+                {/* <Slide backgroundColor={backgroundColor}>
+                    {StateOutsideReact}
+                </Slide> */}
                 <Slide backgroundColor={backgroundColor}>{Memo}</Slide>
                 <Slide backgroundColor={backgroundColor}>{CtxSplitting}</Slide>
+                <Slide backgroundColor={backgroundColor}>{Context}</Slide>
+                <Slide backgroundColor={backgroundColor}>
+                    {SomeRealSolutions}
+                </Slide>
+                <Slide backgroundColor={backgroundColor}>{Zustand}</Slide>
+                <Slide backgroundColor={backgroundColor}>{ApolloState}</Slide>
+                <Slide backgroundColor={backgroundColor}>
+                    {WhatAboutRecoil}
+                </Slide>
+                <Slide backgroundColor={backgroundColor}>
+                    {StateSeperation}
+                </Slide>
+                <Slide backgroundColor={backgroundColor}>{Thanks}</Slide>
             </Deck>
         </AtlanticProvider>
     );

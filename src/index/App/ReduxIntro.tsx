@@ -21,14 +21,14 @@ const StyledTitle = styled(Text)`
 const StyledReducerImg = styled.img.attrs({
     src: reducer,
 })`
-    width: 400px;
+    width: 600px;
     border-radius: ${({ theme }) => theme.radius};
 `;
 
 const StyledActionImg = styled.img.attrs({
     src: action,
 })`
-    width: 400px;
+    width: 600px;
     border-radius: ${({ theme }) => theme.radius};
 `;
 

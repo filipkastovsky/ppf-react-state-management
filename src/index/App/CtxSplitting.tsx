@@ -18,7 +18,7 @@ const StyledTitle = styled(Text)`
 const StyledCtxSplitting = styled.img.attrs({
     src: providerHell,
 })`
-    width: 400px;
+    width: 600px;
     border-radius: ${({ theme }) => theme.radius};
 `;
 

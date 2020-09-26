@@ -31,7 +31,7 @@ const StyledTodoImg = styled.img.attrs({
 export const Hooks: HooksType = (
     <Column>
         <StyledTitle>
-            <Center>React Hooks 🥂👏</Center>
+            <Center>Context + useReducer = Redux??</Center>
         </StyledTitle>
 
         <Center>

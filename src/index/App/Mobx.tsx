@@ -19,7 +19,7 @@ const StyledTitle = styled(Text)`
 export const Mobx: MobxType = (
     <StyledContainer>
         <Column>
-            <StyledTitle>Mobx + Context ❤️🎇</StyledTitle>
+            <StyledTitle>Mobx ❤️</StyledTitle>
             <Center justify={false} align={false}>
                 <MobxImpl />
             </Center>

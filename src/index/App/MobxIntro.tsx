@@ -20,7 +20,7 @@ const StyledTitle = styled(Text)`
 const StyledImg = styled.img.attrs({
     src: noteStore,
 })`
-    width: 400px;
+    width: 800px;
     border-radius: ${({ theme }) => theme.radius};
 `;
 

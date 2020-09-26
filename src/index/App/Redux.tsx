@@ -19,7 +19,7 @@ const StyledTitle = styled(Text)`
 export const Redux: ReduxType = (
     <StyledContainer>
         <Column>
-            <StyledTitle>Redux useSelector ⚛️</StyledTitle>
+            <StyledTitle>Redux ⚛️</StyledTitle>
             <Center justify={false} align={false}>
                 <ReduxImpl />
             </Center>
