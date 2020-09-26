@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea68a9a3332a0fd8067f0e4f65100e5e",
+    "revision": "91213c8a3a73d856251efdb2c4e4c1ca",
     "url": "/ppf-react-state-management/index.html"
   },
   {
-    "revision": "d7e8aea72f5d3a8b4971",
-    "url": "/ppf-react-state-management/static/js/2.682f9098.chunk.js"
+    "revision": "800724bf60ebe779a68f",
+    "url": "/ppf-react-state-management/static/js/2.a1ad591d.chunk.js"
   },
   {
     "revision": "cc020e0ac6f0994ef72bbc8843a11f45",
-    "url": "/ppf-react-state-management/static/js/2.682f9098.chunk.js.LICENSE.txt"
+    "url": "/ppf-react-state-management/static/js/2.a1ad591d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9b35984657105cf8b9b6",
-    "url": "/ppf-react-state-management/static/js/main.60d257a1.chunk.js"
+    "revision": "79e42e370eb96685500a",
+    "url": "/ppf-react-state-management/static/js/main.68fc5c47.chunk.js"
   },
   {
     "revision": "e49bb6061fa5d49305c8",
@@ -28,8 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ppf-react-state-management/static/media/class.78c04f1d.png"
   },
   {
+    "revision": "3beeed440b4597ad657e3b136175e594",
+    "url": "/ppf-react-state-management/static/media/context.3beeed44.jpg"
+  },
+  {
+    "revision": "f80ad5ef058426907a57f4190e1b00bf",
+    "url": "/ppf-react-state-management/static/media/context.f80ad5ef.png"
+  },
+  {
     "revision": "94c0499b4f74f0153e2535418da6929a",
     "url": "/ppf-react-state-management/static/media/google-redux.94c0499b.jpg"
+  },
+  {
+    "revision": "ee9bb1d46ef9c50414e4e5b686386308",
+    "url": "/ppf-react-state-management/static/media/graphql.ee9bb1d4.png"
   },
   {
     "revision": "15a2a2ac23d9d02a2a04a9a1befdd850",
@@ -102,5 +114,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b52a6d5a0779041cd8f5a9591d57acd6",
     "url": "/ppf-react-state-management/static/media/wtfthunk.b52a6d5a.jpg"
+  },
+  {
+    "revision": "2ebeaf88682d670f4883593145857add",
+    "url": "/ppf-react-state-management/static/media/zustand.2ebeaf88.jpg"
   }
 ]);

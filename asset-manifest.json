@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.js": "/ppf-react-state-management/static/js/main.60d257a1.chunk.js",
-    "main.js.map": "/ppf-react-state-management/static/js/main.60d257a1.chunk.js.map",
+    "main.js": "/ppf-react-state-management/static/js/main.68fc5c47.chunk.js",
+    "main.js.map": "/ppf-react-state-management/static/js/main.68fc5c47.chunk.js.map",
     "runtime-main.js": "/ppf-react-state-management/static/js/runtime-main.39ddd9e8.js",
     "runtime-main.js.map": "/ppf-react-state-management/static/js/runtime-main.39ddd9e8.js.map",
-    "static/js/2.682f9098.chunk.js": "/ppf-react-state-management/static/js/2.682f9098.chunk.js",
-    "static/js/2.682f9098.chunk.js.map": "/ppf-react-state-management/static/js/2.682f9098.chunk.js.map",
+    "static/js/2.a1ad591d.chunk.js": "/ppf-react-state-management/static/js/2.a1ad591d.chunk.js",
+    "static/js/2.a1ad591d.chunk.js.map": "/ppf-react-state-management/static/js/2.a1ad591d.chunk.js.map",
     "index.html": "/ppf-react-state-management/index.html",
-    "precache-manifest.9919e38bd28b127c2f3ea0a3b18f2fd2.js": "/ppf-react-state-management/precache-manifest.9919e38bd28b127c2f3ea0a3b18f2fd2.js",
+    "precache-manifest.ef51bce43491f81c714014b3f6ab4f9b.js": "/ppf-react-state-management/precache-manifest.ef51bce43491f81c714014b3f6ab4f9b.js",
     "service-worker.js": "/ppf-react-state-management/service-worker.js",
-    "static/js/2.682f9098.chunk.js.LICENSE.txt": "/ppf-react-state-management/static/js/2.682f9098.chunk.js.LICENSE.txt",
+    "static/js/2.a1ad591d.chunk.js.LICENSE.txt": "/ppf-react-state-management/static/js/2.a1ad591d.chunk.js.LICENSE.txt",
     "static/media/action.png": "/ppf-react-state-management/static/media/action.3ae0646f.png",
     "static/media/class.png": "/ppf-react-state-management/static/media/class.78c04f1d.png",
+    "static/media/context.jpg": "/ppf-react-state-management/static/media/context.3beeed44.jpg",
+    "static/media/context.png": "/ppf-react-state-management/static/media/context.f80ad5ef.png",
     "static/media/google-redux.jpg": "/ppf-react-state-management/static/media/google-redux.94c0499b.jpg",
+    "static/media/graphql.png": "/ppf-react-state-management/static/media/graphql.ee9bb1d4.png",
     "static/media/login-form.jpg": "/ppf-react-state-management/static/media/login-form.15a2a2ac.jpg",
     "static/media/mcr2020.jpg": "/ppf-react-state-management/static/media/mcr2020.2e259026.jpg",
     "static/media/memo.png": "/ppf-react-state-management/static/media/memo.5316c8f3.png",
@@ -30,11 +33,12 @@
     "static/media/todoctx.jpg": "/ppf-react-state-management/static/media/todoctx.7f577117.jpg",
     "static/media/typescript_logo.svg": "/ppf-react-state-management/static/media/typescript_logo.c87187ca.svg",
     "static/media/why.jpg": "/ppf-react-state-management/static/media/why.067d68a7.jpg",
-    "static/media/wtfthunk.jpg": "/ppf-react-state-management/static/media/wtfthunk.b52a6d5a.jpg"
+    "static/media/wtfthunk.jpg": "/ppf-react-state-management/static/media/wtfthunk.b52a6d5a.jpg",
+    "static/media/zustand.jpg": "/ppf-react-state-management/static/media/zustand.2ebeaf88.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.39ddd9e8.js",
-    "static/js/2.682f9098.chunk.js",
-    "static/js/main.60d257a1.chunk.js"
+    "static/js/2.a1ad591d.chunk.js",
+    "static/js/main.68fc5c47.chunk.js"
   ]
 }
